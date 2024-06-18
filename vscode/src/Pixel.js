@@ -12,9 +12,17 @@ function colourToNumber(r, g, b) {
 }
 
 class Pixel {
-    constructor(name, length) {
+    constructor(name, length, config = {}) {
         this.videoname = name;
         this.length = length;
+        this.config = {
+            frameRate: 30,
+            width: 356,
+            height: 200,
+            durationPadding: 20,
+            imageDir: './images',
+            ...config
+        };
         this.frameData = [];
         this.enabled = true;
     }
