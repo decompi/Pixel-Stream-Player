@@ -4,7 +4,7 @@ const app = express();
 
 const CONFIG = {
     VIDEO_PATH: "./small.mp4",
-    STABLE_LENGTH: 60,
+    STABLE_LENGTH: 40,
     PORT: 8080,
     FRAME_RATE: 30,
     WIDTH: 356,
